@@ -13,7 +13,7 @@ export default function App() {
       <a className="brand" href="#top" onClick={close}><span className="brand-mark">WT</span><span>WebTea <em>HQ</em></span></a>
       <button className="menu-toggle" aria-label={open?"Close menu":"Open menu"} onClick={()=>setOpen(!open)}>{open?<X size={21}/>:<Menu size={21}/>}</button>
       <nav className={open?"nav-links is-open":"nav-links"}>
-        {["About","Services","People","Principles"].map(x=><a key={x} href={"#"+x.toLowerCase()} onClick={close}>{x}</a>)}
+        {["About","Services","Roster","Principles"].map(x=><a key={x} href={"#"+x.toLowerCase()} onClick={close}>{x}</a>)}
         <a className="nav-cta" href="#contact" onClick={close}>Start a project <ArrowUpRight size={15}/></a>
       </nav>
     </header>
