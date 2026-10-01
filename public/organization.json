@@ -1,0 +1,14 @@
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"WebTea HQ",
+  "description":"AI-powered digital agency and startup helping businesses establish, build, automate and grow their digital presence.",
+  "foundingDate":"2026-07-07",
+  "foundingLocation":{"@type":"Place","name":"Bettiah, Bihar, India"},
+  "founders":[
+    {"@type":"Person","name":"Aryan Singh","alternateName":"Young Aaru","jobTitle":"Co-Founder & Chief Technology Officer","sameAs":["https://www.linkedin.com/in/aryan-singh-7a5b0a43","https://github.com/viratsingh862008-blip","https://www.instagram.com/young.aaru"]},
+    {"@type":"Person","name":"Ayush Singh","alternateName":"The OG Ayush","jobTitle":"Co-Founder & Chief Marketing & Creative Officer","sameAs":["https://www.instagram.com/d4yush"]}
+  ],
+  "areaServed":["India","International"],
+  "knowsAbout":["Web development","AI systems","Automation","Digital marketing","SEO","Social media","Content creation","Motion graphics","Branding"]
+}
