@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-labelledby="title desc">
+  <title id="title">WebTea official mark</title>
+  <desc id="desc">WebTea wordmark with a steaming glass of tea.</desc>
+  <rect width="640" height="220" fill="#f8f5f2"/>
+  <g fill="#122033" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="108">
+    <text x="42" y="145">web</text><text x="430" y="145">.in</text>
+  </g>
+  <g stroke="#122033" fill="none" stroke-width="7" stroke-linejoin="round">
+    <path d="M274 54 C304 42 364 42 394 54 L382 151 C378 174 364 184 334 184 C304 184 290 174 286 151 Z"/>
+    <path d="M276 55 C306 69 362 69 392 55"/>
+    <path d="M289 84 C310 94 359 94 381 84"/>
+  </g>
+  <path d="M302 78 C318 67 361 67 377 78 C366 89 313 89 302 78Z" fill="#f18a18"/>
+  <path d="M303 87 C314 100 314 143 319 158 M326 90 C335 107 333 143 337 160 M349 90 C342 110 346 145 343 160 M369 87 C359 105 362 144 358 159" fill="none" stroke="#f18a18" stroke-width="8" stroke-linecap="round"/>
+  <path d="M326 31 C311 18 330 7 322 -8 M352 31 C338 18 357 7 349 -8" fill="none" stroke="#c8c9cb" stroke-width="7" stroke-linecap="round"/>
+  <path d="M272 188 H397" stroke="#122033" stroke-width="5" stroke-linecap="round"/>
+</svg>
