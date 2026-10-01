@@ -11,3 +11,258 @@
 .roster{padding:145px 0 110px}.roster-head{display:grid;grid-template-columns:1.15fr .85fr;gap:80px;align-items:end;margin:48px 0 55px}.roster-head h2{font-size:clamp(48px,6vw,82px);line-height:.9;letter-spacing:-.07em;margin:14px 0 0}.roster-head h2 span{color:var(--acid)}.roster-head>p{max-width:430px;color:var(--muted);line-height:1.7;font-size:14px}.arcade-label{font:500 9px "DM Mono",monospace;color:var(--acid);letter-spacing:.16em}.arcade-cabinet{position:relative;overflow:hidden;border:2px solid #353b35;background:#090a09;box-shadow:12px 12px 0 #151915,0 0 0 1px #080908;padding:14px}.crt-noise{position:absolute;inset:0;pointer-events:none;opacity:.08;background:repeating-linear-gradient(0deg,transparent 0,transparent 2px,#fff 3px);z-index:4}.arcade-top,.arcade-bottom{position:relative;z-index:5;display:flex;justify-content:space-between;padding:9px 8px;color:#778078;font:500 8px "DM Mono",monospace;letter-spacing:.12em;border-bottom:1px solid #252a25}.arcade-bottom{border-top:1px solid #252a25;border-bottom:0;margin-top:14px;color:var(--acid)}.roster-grid{position:relative;z-index:3;display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:12px 0}.player-card{min-height:430px;position:relative;overflow:hidden;border:1px solid #292e29;background:#0e110e;padding:14px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .22s,filter .22s,box-shadow .22s}.player-card:hover{transform:translateY(-7px) rotate(-.6deg);filter:saturate(1.2);box-shadow:0 12px 30px #0008}.player-card:after{content:"";position:absolute;inset:0;background:linear-gradient(140deg,#fff1,transparent 40%),repeating-linear-gradient(90deg,transparent 0 18px,#fff008 19px);opacity:.025}.player-glow{position:absolute;width:180px;height:180px;right:-90px;top:-70px;border-radius:50%;background:currentColor;filter:blur(45px);opacity:.16}.player-card.acid{color:#c8ff3d}.player-card.orange{color:#ff9a3d}.player-card.blue{color:#54c7ff}.player-card.pink{color:#ff72c9}.player-card.violet{color:#a78bff}.player-meta{display:flex;justify-content:space-between;color:currentColor;font:500 8px "DM Mono",monospace;letter-spacing:.1em}.pixel-avatar{width:108px;height:108px;margin:20px auto 10px;display:grid;place-items:center;border:2px solid currentColor;background:linear-gradient(135deg,#111,#202420);box-shadow:inset 0 0 0 5px #080908;image-rendering:pixelated}.pixel-avatar span{font:800 24px "DM Mono",monospace;color:currentColor;text-shadow:3px 3px 0 #000;transform:scaleX(.85)}.player-copy{color:#e6ebe6}.player-class{color:currentColor;font:500 8px "DM Mono",monospace;letter-spacing:.12em}.player-copy h3{margin:5px 0 3px;font-size:20px;letter-spacing:-.05em}.player-copy strong{display:block;color:#9ca69e;font:500 8px "DM Mono",monospace;line-height:1.5}.player-copy p{color:#747e76;font-size:10px;line-height:1.5;margin:12px 0 0}.player-status{display:flex;align-items:center;gap:6px;color:currentColor;font:500 8px "DM Mono",monospace;letter-spacing:.08em}.status-dot{width:5px;height:5px;background:currentColor;box-shadow:0 0 10px currentColor}.roster .section-kicker{color:#777f79}
 @media(max-width:1000px){.roster-head{grid-template-columns:1fr;gap:30px}.roster-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:650px){.roster{padding:100px 0 80px}.arcade-cabinet{padding:8px;box-shadow:6px 6px 0 #151915}.roster-grid{grid-template-columns:1fr 1fr}.player-card{min-height:380px}.player-copy h3{font-size:17px}.arcade-top,.arcade-bottom{font-size:7px;gap:10px}.arcade-top span:nth-child(2),.arcade-bottom span:nth-child(2){display:none}}
+
+
+/* WebTea HQ role-model carousel — retro CRT system, rebuilt for the WebTea team. */
+.role-models-section{
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  min-height:100vh;
+  padding:110px 0 90px;
+  background:
+    radial-gradient(circle at 50% 20%,rgba(66,69,164,.82) 0,rgba(29,30,86,.72) 34%,rgba(8,8,34,.98) 82%),
+    #0c0c1f;
+  color:#f4f3f1;
+}
+.role-models-section:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(rgba(27,33,151,.36) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(27,33,151,.25) 1px,transparent 1px);
+  background-size:44px 44px;
+  opacity:.5;
+}
+.role-models-screen-buzz{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(67,71,202,.18) 4px,transparent 6px);
+  mix-blend-mode:screen;
+  opacity:.55;
+}
+.role-models-inner{position:relative;z-index:1}
+.role-model-terminal-head{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:18px;
+}
+.terminal-box{
+  background:rgba(42,45,144,.42);
+  border:1px solid #2226e6;
+  border-radius:0;
+  box-shadow:inset 0 0 0 1px rgba(70,75,255,.1),0 0 18px rgba(20,26,255,.06);
+  backdrop-filter:blur(2px);
+}
+.role-model-title-box{
+  flex:1;
+  min-height:150px;
+  padding:22px 20px 18px;
+}
+.role-model-brandline{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#c8c6c6;
+  font:500 9px "DM Mono",monospace;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.role-model-brandline img{
+  width:42px;
+  height:22px;
+  object-fit:cover;
+  object-position:center;
+  filter:saturate(.9) contrast(1.05);
+}
+.role-model-title-box h2{
+  margin:15px 0 12px;
+  font-family:"DM Mono",monospace;
+  font-size:clamp(34px,4.8vw,66px);
+  line-height:.95;
+  letter-spacing:.035em;
+  text-transform:uppercase;
+  text-shadow:0 1px 4px rgba(255,255,255,.55);
+}
+.role-model-title-box h2 span{color:#fff}
+.role-model-highlight{
+  display:inline-block;
+  margin:0;
+  padding:5px 15px;
+  background:rgba(180,53,28,.88);
+  color:#f8f7f4;
+  font:500 10px "DM Mono",monospace;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.role-model-control{
+  width:180px;
+  min-height:150px;
+  padding:16px 12px 12px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.role-model-buttons{display:flex;justify-content:center;align-items:center;gap:7px}
+.role-model-button{
+  min-width:24px;
+  min-height:28px;
+  padding:2px 6px;
+  border:0;
+  background:transparent;
+  color:#c6c5c7;
+  font:500 12px "DM Mono",monospace;
+  cursor:pointer;
+}
+.role-model-button:hover:not(:disabled),
+.role-model-button.active{color:#fff;text-shadow:0 1px 4px #fff}
+.role-model-button:disabled{opacity:.28;cursor:not-allowed}
+.role-model-progress{
+  width:92px;
+  height:7px;
+  align-self:center;
+  accent-color:#285bc7;
+  opacity:.75;
+}
+.role-model-container{touch-action:pan-y}
+.role-model-group{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.role-model-card{
+  min-width:0;
+  padding:18px;
+  color:#d7d5d6;
+}
+.role-model-portrait{
+  height:300px;
+  position:relative;
+  overflow:hidden;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(31,35,225,.9);
+  background:
+    radial-gradient(circle at 50% 35%,rgba(255,255,255,.16),transparent 25%),
+    linear-gradient(145deg,#5e5b68 0,#26284c 45%,#15162e 100%);
+  isolation:isolate;
+}
+.role-model-portrait.orange{background:linear-gradient(145deg,#77533d,#32263b 55%,#14142c)}
+.role-model-portrait.blue{background:linear-gradient(145deg,#365d84,#242c57 55%,#12132d)}
+.role-model-portrait.pink{background:linear-gradient(145deg,#754d68,#35264c 55%,#14132e)}
+.role-model-portrait.violet{background:linear-gradient(145deg,#554d83,#2c2859 55%,#11122b)}
+.portrait-grid{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(52,61,210,.38) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(52,61,210,.28) 1px,transparent 1px);
+  background-size:24px 24px;
+  opacity:.7;
+}
+.portrait-scanlines{
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.08) 4px,transparent 6px);
+  z-index:2;
+}
+.portrait-corner{
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index:3;
+  color:#e7e6e7;
+  font:500 8px "DM Mono",monospace;
+  letter-spacing:.12em;
+}
+.portrait-monogram{
+  position:relative;
+  z-index:1;
+  width:150px;
+  height:150px;
+  display:grid;
+  place-items:center;
+  border:2px solid rgba(255,255,255,.68);
+  background:rgba(9,10,29,.55);
+  color:#fff;
+  font:800 42px "DM Mono",monospace;
+  letter-spacing:-.1em;
+  text-shadow:0 2px 8px rgba(255,255,255,.4);
+  box-shadow:0 0 0 10px rgba(7,8,26,.22),0 0 45px rgba(56,71,255,.3);
+}
+.portrait-logo{
+  position:absolute;
+  z-index:3;
+  right:11px;
+  bottom:10px;
+  color:#f4f2ef;
+  font:800 10px "DM Mono",monospace;
+  letter-spacing:.1em;
+}
+.portrait-logo span{color:#f08a1a;margin-left:3px}
+.role-model-content{padding:22px 0 0}
+.role-model-content h3{
+  margin:0 0 8px;
+  color:#fff;
+  font:800 clamp(20px,2vw,29px) "DM Mono",monospace;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  text-shadow:0 1px 3px rgba(255,255,255,.35);
+}
+.role-model-label{
+  margin:0 0 17px;
+  color:#f5f4f3;
+  font:700 11px "DM Mono",monospace;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.role-model-content>p:not(.role-model-label){
+  margin:0;
+  min-height:76px;
+  color:#b9b8bd;
+  font:400 11px "DM Mono",monospace;
+  line-height:1.75;
+}
+.role-model-meta{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  margin-top:18px;
+  padding-top:11px;
+  border-top:1px solid rgba(45,50,220,.7);
+  color:#a6a5ab;
+  font:500 8px "DM Mono",monospace;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.role-model-meta span:last-child{color:#dfe4ff}
+.role-model-mobile-controls{display:none}
+@media(max-width:1032px){
+  .role-model-group{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .role-model-portrait{height:260px}
+}
+@media(max-width:750px){
+  .role-models-section{min-height:auto;padding:80px 0 65px}
+  .role-model-terminal-head{display:block}
+  .role-model-control{display:none}
+  .role-model-title-box{min-height:auto}
+  .role-model-title-box h2{font-size:11vw}
+  .role-model-group{grid-template-columns:1fr}
+  .role-model-card{padding:13px}
+  .role-model-portrait{height:330px}
+  .role-model-content h3{font-size:21px}
+  .role-model-content>p:not(.role-model-label){min-height:0}
+  .role-model-mobile-controls{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:12px;
+    color:#d5d4d8;
+    font:500 9px "DM Mono",monospace;
+  }
+  .role-model-mobile-controls .role-model-button{font-size:28px}
+}
