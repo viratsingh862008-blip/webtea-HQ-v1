@@ -8,7 +8,7 @@ The source corpus is Emma Bostian's Developer Portfolios collection, which curre
 
 | Reference direction | Source example | WebTea HQ treatment |
 | --- | --- | --- |
-| Old-school / retro portfolio | Akshat Kotpalliwar / IntegerAlex — https://realtalkportfolio.vercel.app | The People section becomes a 90s arcade-style player roster. |
+| Old-school / retro portfolio | Akshat Kotpalliwar / IntegerAlex — https://realtalkportfolio.vercel | Retro interaction personality and playful system framing. |\n| CRT role-model carousel | Ashleigh Simonelli — https://ashleighsimonelli.co.uk | Team/founding-member section rebuilt as a WebTea-specific CRT carousel: terminal header, controls, responsive 3/2/1 card paging, scanlines and status metadata. |
 | Animated frontend | Aakhand Tajmirul — listed as Animated | Motion language for transitions, hover states and section choreography. |
 | GSAP / motion personality | Aman Rai — listed with GSAP animations | Used as inspiration for future motion modules, not copied. |
 | 3D / game portfolio | Gil Itzhaky — listed as an Interactive 3D Portfolio Game | Used as a direction for future interactive product/project experiences. |
