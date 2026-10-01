@@ -49,7 +49,7 @@ export default function App() {
 
     <section id="principles" className="section-shell principles"><div className="section-kicker">05 / HOW WE WORK</div><div className="principle-list">{company.principles.map(([n,t,d])=><article key={n}><span>{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div></section>
 
-    <section id="contact" className="section-shell contact"><div className="contact-box"><div className="section-kicker">06 / LET'S BUILD</div><h2>Have a business that needs to <span>move?</span></h2><p>Tell us what you are trying to establish, build, automate or grow. We will figure out the digital system around it.</p><a className="button button-primary" href="mailto:hello@webteahq.com">Start a conversation <ArrowUpRight size={17}/></a><small>Official website domain and contact channel can be configured when your domain is ready.</small></div></section>
+    <section id="contact" className="section-shell contact"><div className="contact-box"><div className="section-kicker">06 / LET'S BUILD</div><h2>Have a business that needs to <span>move?</span></h2><p>Tell us what you are trying to establish, build, automate or grow. We will figure out the digital system around it.</p><a className="button button-primary" href="#about">Start a conversation <ArrowUpRight size={17}/></a><small>Official website domain and contact channel can be configured when your domain is ready.</small></div></section>
 
     <footer className="footer section-shell"><div className="brand"><span className="brand-mark">WT</span><span>WebTea <em>HQ</em></span></div><div><p>© {new Date().getFullYear()} WebTea HQ · Headquarters · Bettiah, Bihar, India</p><p>AI-powered digital agency × startup</p></div><a href="#top">Back to top ↑</a></footer>
   </main>;
