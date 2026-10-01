@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, Menu, X, Zap, Globe2, Bot, Workflow, Clapperboard, Search, Sparkles } from "lucide-react";
 import { company } from "./data/company.mjs";
+import { roster } from "./data/roster.mjs";
 
 const serviceIcons = [Globe2, Bot, Workflow, Search, Clapperboard, Sparkles];
 
@@ -47,7 +48,29 @@ export default function App() {
       </div>
     </section>
 
-    <section id="principles" className="section-shell principles"><div className="section-kicker">05 / HOW WE WORK</div><div className="principle-list">{company.principles.map(([n,t,d])=><article key={n}><span>{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div></section>
+    <section id="roster" className="section-shell roster">
+  <div className="section-kicker">05 / PLAYER SELECT</div>
+  <div className="roster-head">
+    <div><p className="arcade-label">WEBTEA HQ // 199X SYSTEM</p><h2>Meet the <span>operators.</span></h2></div>
+    <p>Inspired by the strange, tactile personality of old-school portfolios and 90s game interfaces — rebuilt as WebTea HQ's own member system.</p>
+  </div>
+  <div className="arcade-cabinet">
+    <div className="crt-noise"></div>
+    <div className="arcade-top"><span>INSERT COIN</span><span>WEBTEA HQ</span><span>PLAYERS 05</span></div>
+    <div className="roster-grid">
+      {roster.map((member,index)=><a className={"player-card "+member.color} href={member.link} target={member.link === "#" ? undefined : "_blank"} rel={member.link === "#" ? undefined : "noreferrer"} key={member.name}>
+        <div className="player-glow"></div>
+        <div className="player-meta"><span>P{String(index+1).padStart(2,"0")}</span><span>{member.level}</span></div>
+        <div className="pixel-avatar"><span>{member.alias.slice(0,2)}</span></div>
+        <div className="player-copy"><span className="player-class">{member.className}</span><h3>{member.name}</h3><strong>{member.role}</strong><p>{member.bio}</p></div>
+        <div className="player-status"><span className="status-dot"></span>{member.status}<ArrowUpRight size={13}/></div>
+      </a>)}
+    </div>
+    <div className="arcade-bottom"><span>© WEBTEA HQ</span><span>EST. 07·07·2026</span><span>PRESS START TO BUILD</span></div>
+  </div>
+</section>
+
+<section id="principles" className="section-shell principles"><div className="section-kicker">05 / HOW WE WORK</div><div className="principle-list">{company.principles.map(([n,t,d])=><article key={n}><span>{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div></section>
 
     <section id="contact" className="section-shell contact"><div className="contact-box"><div className="section-kicker">06 / LET'S BUILD</div><h2>Have a business that needs to <span>move?</span></h2><p>Tell us what you are trying to establish, build, automate or grow. We will figure out the digital system around it.</p><a className="button button-primary" href="#about">Start a conversation <ArrowUpRight size={17}/></a><small>Official website domain and contact channel can be configured when your domain is ready.</small></div></section>
 
