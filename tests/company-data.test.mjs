@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { company } from "../src/data/company.ts";
+import { company } from "../src/data/company.mjs";
 
 test("WebTea HQ has the canonical company identity", () => {
   assert.equal(company.name, "WebTea HQ");
