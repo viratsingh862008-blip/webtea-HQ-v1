@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Add the official sitemap URL after the WebTea HQ domain is configured.
